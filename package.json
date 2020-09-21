@@ -45,8 +45,7 @@
     "reason-react-native": "github:reason-react-native/reason-react-native#b9a31b3f32deb0889d48e061e54f6dd253bfc8e8"
   },
   "prettier": {
-    "trailingComma": "all",
-    "proseWrap": "always"
+    "trailingComma": "all"
   },
   "lint-staged": {
     "*.{md,json,js,css}": [
