@@ -10,7 +10,7 @@ external make:
     ~selectedValue: 'a=?,
     ~itemStyle: ReactNative.Style.t=?,
     // View props 0.62.0
-    ~accessibilityComponentType: [@bs.string] [
+    ~accessibilityComponentType: [
                                    | `none
                                    | `button
                                    | `radiobutton_checked
@@ -21,8 +21,8 @@ external make:
     ~accessibilityHint: string=?,
     ~accessibilityIgnoresInvertColors: bool=?,
     ~accessibilityLabel: string=?,
-    ~accessibilityLiveRegion: [@bs.string] [ | `none | `polite | `assertive]=?,
-    ~accessibilityRole: [@bs.string] [
+    ~accessibilityLiveRegion: [ | `none | `polite | `assertive]=?,
+    ~accessibilityRole: [
                           | `none
                           | `button
                           | `link
