@@ -1,4 +1,5 @@
-include ReactNative.NativeElement;
+open ReactNative;
+include NativeElement;
 
 [@react.component] [@bs.module "@react-native-community/picker"]
 external make:
@@ -14,7 +15,7 @@ external make:
     ~prompt: string=?,
     // iOS only
     ~itemStyle: ReactNative.Style.t=?,
-    // View Props
+    // View props 0.62.0
     ~accessibilityComponentType: [@bs.string] [
                                    | `none
                                    | `button
@@ -39,15 +40,25 @@ external make:
                           | `header
                           | `summary
                           | `imagebutton
+                          | `article
+                          | `banner
+                          | `complementary
+                          | `contentinfo
+                          | `form
+                          | `list
+                          | `listitem
+                          | `main
+                          | `navigation
+                          | `region
                         ]
                           =?,
-    ~accessibilityState: ReactNative.Accessibility.state=?,
-    ~accessibilityTraits: array(ReactNative.AccessibilityTrait.t)=?,
-    ~accessibilityValue: ReactNative.Accessibility.value=?,
+    ~accessibilityState: Accessibility.state=?,
+    ~accessibilityTraits: array(AccessibilityTrait.t)=?,
+    ~accessibilityValue: Accessibility.value=?,
     ~accessibilityViewIsModal: bool=?,
     ~accessible: bool=?,
     ~collapsable: bool=?,
-    ~hitSlop: ReactNative.View.edgeInsets=?,
+    ~hitSlop: View.edgeInsets=?,
     ~importantForAccessibility: [@bs.string] [
                                   | `auto
                                   | `yes
@@ -60,21 +71,21 @@ external make:
     ~needsOffscreenAlphaCompositing: bool=?,
     ~onAccessibilityEscape: unit => unit=?,
     ~onAccessibilityTap: unit => unit=?,
-    ~onLayout: ReactNative.Event.layoutEvent => unit=?,
+    ~onLayout: Event.layoutEvent => unit=?,
     ~onMagicTap: unit => unit=?,
     // Gesture Responder props
-    ~onMoveShouldSetResponder: ReactNative.Event.pressEvent => bool=?,
-    ~onMoveShouldSetResponderCapture: ReactNative.Event.pressEvent => bool=?,
-    ~onResponderEnd: ReactNative.Event.pressEvent => unit=?,
-    ~onResponderGrant: ReactNative.Event.pressEvent => unit=?,
-    ~onResponderMove: ReactNative.Event.pressEvent => unit=?,
-    ~onResponderReject: ReactNative.Event.pressEvent => unit=?,
-    ~onResponderRelease: ReactNative.Event.pressEvent => unit=?,
-    ~onResponderStart: ReactNative.Event.pressEvent => unit=?,
-    ~onResponderTerminate: ReactNative.Event.pressEvent => unit=?,
-    ~onResponderTerminationRequest: ReactNative.Event.pressEvent => bool=?,
-    ~onStartShouldSetResponder: ReactNative.Event.pressEvent => bool=?,
-    ~onStartShouldSetResponderCapture: ReactNative.Event.pressEvent => bool=?,
+    ~onMoveShouldSetResponder: Event.pressEvent => bool=?,
+    ~onMoveShouldSetResponderCapture: Event.pressEvent => bool=?,
+    ~onResponderEnd: Event.pressEvent => unit=?,
+    ~onResponderGrant: Event.pressEvent => unit=?,
+    ~onResponderMove: Event.pressEvent => unit=?,
+    ~onResponderReject: Event.pressEvent => unit=?,
+    ~onResponderRelease: Event.pressEvent => unit=?,
+    ~onResponderStart: Event.pressEvent => unit=?,
+    ~onResponderTerminate: Event.pressEvent => unit=?,
+    ~onResponderTerminationRequest: Event.pressEvent => bool=?,
+    ~onStartShouldSetResponder: Event.pressEvent => bool=?,
+    ~onStartShouldSetResponderCapture: Event.pressEvent => bool=?,
     ~pointerEvents: [@bs.string] [
                       | `auto
                       | `none
@@ -85,9 +96,17 @@ external make:
     ~removeClippedSubviews: bool=?,
     ~renderToHardwareTextureAndroid: bool=?,
     ~shouldRasterizeIOS: bool=?,
-    ~style: ReactNative.Style.t=?,
+    ~style: Style.t=?,
     ~testID: string=?,
-    ~children: React.element=?
+    ~children: React.element=?,
+    // React Native Web Props
+    ~onMouseDown: ReactEvent.Mouse.t => unit=?,
+    ~onMouseEnter: ReactEvent.Mouse.t => unit=?,
+    ~onMouseLeave: ReactEvent.Mouse.t => unit=?,
+    ~onMouseMove: ReactEvent.Mouse.t => unit=?,
+    ~onMouseOver: ReactEvent.Mouse.t => unit=?,
+    ~onMouseOut: ReactEvent.Mouse.t => unit=?,
+    ~onMouseUp: ReactEvent.Mouse.t => unit=?
   ) =>
   React.element =
   "Picker";

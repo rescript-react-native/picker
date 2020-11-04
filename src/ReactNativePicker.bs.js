@@ -2,7 +2,7 @@
 
 var NativeElement$ReactNative = require("reason-react-native/src/elements/NativeElement.bs.js");
 
-var Item = { };
+var Item = {};
 
 exports.Item = Item;
 /* NativeElement-ReactNative Not a pure module */
