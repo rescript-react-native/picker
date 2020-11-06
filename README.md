@@ -1,34 +1,32 @@
-# BuckleScript bindings to @react-native-community/picker
+# `@reason-react-native/picker`
 
 [![Build Status](https://github.com/reason-react-native/picker/workflows/Build/badge.svg)](https://github.com/reason-react-native/picker/actions)
-[![Version](https://img.shields.io/npm/v/@reason-react-native/picker.svg)](https://www.npmjs.com/package/@reason-react-native/picker)
+[![Version](https://img.shields.io/npm/v/@reason-react-native/picker.svg)](https://www.npmjs.com/@reason-react-native/picker)
+[![Chat](https://img.shields.io/discord/235176658175262720.svg?logo=discord&colorb=blue)](https://reason-react-native.github.io/discord/)
 
-These are complete BuckleScript bindings to
-[`@reason-react-native/picker`](https://github.com/react-native-community/react-native-picker),
-in Reason syntax.
+[ReScript](https://rescript-lang.org) / [Reason](https://reasonml.github.io) bindings for
+[`@react-native-picker/picker`](https://github.com/react-native-picker/picker).
 
-Version `x.y.z` of `@reason-react-native/picker` should be compatible with
-version `x.y.*` of `@react-native-community/picker`.
+Exposed as `ReactNativePicker` module.
+
+`@reason-react-native/picker` X.y.\* means it's compatible with
+`@react-native-picker/picker` X.y.\*
 
 ## Installation
 
-With `yarn`:
+When
+[`@react-native-picker/picker`](https://github.com/react-native-picker/picker)
+is properly installed & configured by following their installation instructions,
+you can install the bindings:
 
-```shell
+```console
+npm install @reason-react-native/picker
+# or
 yarn add @reason-react-native/picker
 ```
 
-With `npm`:
-
-```shell
-npm install @reason-react-native/picker
-```
-
-`@react-native-community/picker` should be properly installed and linked. Please
-refer to the relevant
-[instructions](https://github.com/react-native-community/react-native-picker/blob/master/README.md).
-
-`@reason-react-native/picker` should be added to `bs-dependencies` in your `bsconfig.json`. Something like
+`@reason-react-native/picker` should be added to `bs-dependencies` in your
+`bsconfig.json`:
 
 ```diff
 {
