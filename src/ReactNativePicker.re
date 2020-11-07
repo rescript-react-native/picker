@@ -11,6 +11,7 @@ external make:
     ~selectedValue: 'a=?,
     ~enabled: bool=?,
     // Android only
+    ~dropdownIconColor: string=?,
     ~mode: [ | `dialog | `dropdown]=?,
     ~prompt: string=?,
     // iOS only
