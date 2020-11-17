@@ -1,7 +1,7 @@
 {
   "name": "@reason-react-native/picker",
   "description": "ReScript bindings for @react-native-picker/picker.",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "publishConfig": {
     "access": "public"
   },
