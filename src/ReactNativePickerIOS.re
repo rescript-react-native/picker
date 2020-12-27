@@ -83,7 +83,7 @@ module Item = {
   external make:
     (
       ~value: 'a=?,
-      ~label: string,
+      ~label: string=?,
       ~color: ReactNative.Color.t=?,
       ~testID: string=?
     ) =>
