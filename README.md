@@ -15,7 +15,7 @@ Exposed as `ReactNativePicker` module.
 ## Installation
 
 When
-[`@react-native-picker/picker"`](https://github.com/react-native-picker/picker)
+[`@react-native-picker/picker`](https://github.com/react-native-picker/picker)
 is properly installed & configured by following their installation instructions,
 you can install the bindings:
 
