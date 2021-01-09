@@ -78,7 +78,7 @@ external make:
 
 module Item = {
   [@react.component]
-  [@bs.module "@react-native-community/picker"]
+  [@bs.module "@react-native-picker/picker"]
   [@bs.scope "PickerIOS"]
   external make:
     (
