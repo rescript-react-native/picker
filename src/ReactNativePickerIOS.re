@@ -1,7 +1,7 @@
 open ReactNative;
 include NativeElement;
 
-[@react.component] [@bs.module "@react-native-picker/picker"]
+[@react.component] [@bs.module "@react-native-community/picker"]
 external make:
   (
     ~ref: ref=?,
@@ -83,7 +83,7 @@ module Item = {
   external make:
     (
       ~value: 'a=?,
-      ~label: string=?,
+      ~label: string,
       ~color: ReactNative.Color.t=?,
       ~testID: string=?
     ) =>
