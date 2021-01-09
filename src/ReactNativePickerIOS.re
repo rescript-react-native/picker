@@ -1,7 +1,7 @@
 open ReactNative;
 include NativeElement;
 
-[@react.component] [@bs.module "@react-native-picker/picker"]
+[@react.component] [@bs.module "@react-native-community/picker"]
 external make:
   (
     ~ref: ref=?,
