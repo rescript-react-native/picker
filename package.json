@@ -6,7 +6,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@react-native-community/picker": "^1.9.0"
+    "@react-native-picker/picker": "^1.9.0"
   },
   "repository": "https://github.com/reason-react-native/picker.git",
   "license": "MIT",
