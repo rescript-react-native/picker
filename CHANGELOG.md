@@ -1,4 +1,4 @@
-# Changelog of `@reason-react-native/picker`
+# Changelog of `@rescript-react-native/picker`
 
 ## 1.9.1 - 2020-11-17
 

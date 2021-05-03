@@ -1,15 +1,15 @@
-# `@reason-react-native/picker`
+# `@rescript-react-native/picker`
 
-[![Build Status](https://github.com/reason-react-native/picker/workflows/Build/badge.svg)](https://github.com/reason-react-native/picker/actions)
-[![Version](https://img.shields.io/npm/v/@reason-react-native/picker.svg)](https://www.npmjs.com/@reason-react-native/picker)
-[![Chat](https://img.shields.io/discord/235176658175262720.svg?logo=discord&colorb=blue)](https://reason-react-native.github.io/discord/)
+[![Build Status](https://github.com/rescript-react-native/picker/workflows/Build/badge.svg)](https://github.com/rescript-react-native/picker/actions)
+[![Version](https://img.shields.io/npm/v/@rescript-react-native/picker.svg)](https://www.npmjs.com/@rescript-react-native/picker)
+[![ReScript Forum](https://img.shields.io/discourse/posts?color=e6484f&label=ReScript%20Forum&server=https%3A%2F%2Fforum.rescript-lang.org)](https://forum.rescript-lang.org/)
 
-[ReScript](https://rescript-lang.org) / [Reason](https://reasonml.github.io) bindings for
+[ReScript](https://rescript-lang.org) bindings for
 [`@react-native-picker/picker`](https://github.com/react-native-picker/picker).
 
 Exposed as `ReactNativePicker` module.
 
-`@reason-react-native/picker` X.y.\* means it's compatible with
+`@rescript-react-native/picker` X.y.\* means it's compatible with
 `@react-native-picker/picker` X.y.\*
 
 ## Installation
@@ -20,22 +20,22 @@ is properly installed & configured by following their installation instructions,
 you can install the bindings:
 
 ```console
-npm install @reason-react-native/picker
+npm install @rescript-react-native/picker
 # or
-yarn add @reason-react-native/picker
+yarn add @rescript-react-native/picker
 ```
 
-`@reason-react-native/picker` should be added to `bs-dependencies` in your
+`@rescript-react-native/picker` should be added to `bs-dependencies` in your
 `bsconfig.json`:
 
 ```diff
 {
   //...
   "bs-dependencies": [
-    "reason-react",
-    "reason-react-native",
+    "@rescript/react",
+    "rescript-react-native",
     // ...
-+    "@reason-react-native/picker"
++    "@rescript-react-native/picker"
   ],
   //...
 }
@@ -59,7 +59,7 @@ Supported on _Android_ and _iOS_.
 | `itemStyle: ReactNative.Style.t`                                                          | _iOS only_ <br /> Style to be applied to each item label. <br /> <br /> **Note:** only `Text` style props are supported.                                                                                                |
 
 Please also see
-[Reason React Native documentation of `View` props](https://reasonml-community.github.io/reason-react-native/en/docs/components/View/)
+[ReScript React Native documentation of `View` props](https://rescript-react-native.github.io/en/docs/components/View/)
 for additional supported props.
 
 ### `ReactNativePickerIOS` Component
@@ -75,7 +75,7 @@ Supported on _iOS_.
 | `itemStyle: ReactNative.Style.t`            | Style to be applied to each item label. <br /> <br /> **Note:** only `Text` style props are supported.                            |
 
 Please also see
-[Reason React Native documentation of `View` props](https://reasonml-community.github.io/reason-react-native/en/docs/components/View/)
+[ReScript React Native documentation of `View` props](https://rescript-react-native.github.io/en/docs/components/View/)
 for additional supported props.
 
 ### `ReactNativePicker.Item` and `ReactNativePickerIOS.Item` Components
@@ -101,11 +101,11 @@ releases.
 ## Contribute
 
 Read the
-[contribution guidelines](https://github.com/reason-react-native/.github/blob/master/CONTRIBUTING.md)
+[contribution guidelines](https://github.com/rescript-react-native/.github/blob/master/CONTRIBUTING.md)
 before contributing.
 
 ## Code of Conduct
 
 We want this community to be friendly and respectful to each other. Please read
-[our full code of conduct](https://github.com/reason-react-native/.github/blob/master/CODE_OF_CONDUCT.md)
+[our full code of conduct](https://github.com/rescript-react-native/.github/blob/master/CODE_OF_CONDUCT.md)
 so that you can understand what actions will and will not be tolerated.
