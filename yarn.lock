@@ -120,10 +120,10 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@rescript/react@^0.10.0":
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.10.2.tgz#170d2a5ff34ad09cd614d92467d5efad95202794"
-  integrity sha512-Qe21P4WnrmrbhbEMQ4dpaXC1/iMMc7JmqjuSpZouSP+s41K5dCXUGY9sds30gajU74lSfJdG2PzSDYcNAcDyVA==
+"@rescript/react@^0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.11.0.tgz#d2545546d823bdb8e6b59daa1790098d1666f79e"
+  integrity sha512-RzoAO+3cJwXE2D7yodMo4tBO2EkeDYCN/I/Sj/yRweI3S1CY1ZBOF/GMcVtjeIurJJt7KMveqQXTaRrqoGZBBg==
 
 "@sindresorhus/df@^1.0.1":
   version "1.0.1"
@@ -255,11 +255,6 @@ braces@^3.0.1:
   integrity sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
   dependencies:
     fill-range "^7.0.1"
-
-bs-platform@^9.0.0:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-9.0.2.tgz#a6eac70eb8924a322556dacaccbfbc9b2a0d3a37"
-  integrity sha512-Ye9JqJ4Oa7mcjjoOVRYI8Uc2Cf8N7jQLWDcdUplY7996d/YErSR7WitmV7XnSwr4EvdrbwjEsg1NxNjUQv3ChA==
 
 callsites@^3.0.0:
   version "3.1.0"
@@ -1116,10 +1111,15 @@ readjson@^2.0.1:
   dependencies:
     try-catch "^3.0.0"
 
-rescript-react-native@^0.64.3:
-  version "0.64.3"
-  resolved "https://registry.yarnpkg.com/rescript-react-native/-/rescript-react-native-0.64.3.tgz#8fd11a2681cfdd65c02f0ff620186e5adf0c6854"
-  integrity sha512-PjGDkV3RYiCTk4hCZyaKtZJV69By0AmJuzWyuHZONdeCB0q3DwjVJtA73gu6+jBrdl0OWon6UdXaVRXhhR47cQ==
+rescript-react-native@^0.71.1:
+  version "0.71.1"
+  resolved "https://registry.yarnpkg.com/rescript-react-native/-/rescript-react-native-0.71.1.tgz#f0fdffa65c49ca0bdd79697899da4a70a2921b1a"
+  integrity sha512-EpFSC1IAwrdIzhpvrnBx3sXooUfWL++HSv2f8t0OViWaxfuReA60kc7KBKBQ9s4HWijN4QW/H+FU/I/WmdoIdA==
+
+rescript@^10.1.4:
+  version "10.1.4"
+  resolved "https://registry.yarnpkg.com/rescript/-/rescript-10.1.4.tgz#0f37710d371f32a704f17b4e804f66ce3c79a305"
+  integrity sha512-FFKlS9AG/XrLepWsyw7B+A9DtQBPWEPDPDKghV831Y2KGbie+eeFBOS0xtRHp0xbt7S0N2Dm6hhX+kTZQ/3Ybg==
 
 resolve-from@^4.0.0:
   version "4.0.0"
